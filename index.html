@@ -6,36 +6,34 @@
 		<!-- meta tags and title -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>TP10 Simple Weather App</title>
+		<title>Weather</title>
+		<link rel="icon" type="images/x-icon" href="https://proofmart.com/wp-content/uploads/2021/06/561-2-1536x1536.png"/>
 
-		<!-- external and on-page CSS goes here -->
 		<link rel="stylesheet" href="styles.css" media="all">
-		<style>
-			/* on-page CSS, if any, goes here -- otherwise delete this section */
-		</style>
-
-		<!-- external and on-page JavaScript goes here -->
+		
 		<script type="text/javascript" src="scripts.js" defer></script>
-		<script>
-			// on-page JavaScript, if any, goes here -- otherwise delete this section
-		</script>
-
+		
 	</head>
 
 	<body>
+	    
+	    <form>
+	        <input type="text" name="placeSearch" id="placeSearch" placeholder="Search a city or zip" value="">
+	       
+	        <button type="submit">Search</button>
+	   
+	    </form>
 
 		<div id="temps">
-		    <div id="location">Location: <span></span></div>
-		    <div id="tempF"><span></span>°F</div>
-		    <div id="tempC"><span></span>°C</div>
+		    <div id="location"><span></span></div>
+		    <div id="tempF"><span></span> °F</div>
+		    <div id="tempC"><span></span> °C</div>
+		    <div id="cloud">Cloud Cover: <span></span>%</div>
 		    <div id="winDir">Wind Direction: <span></span></div>
 		    <div id="winSpeed">Wind Speed: <span></span>mph</div>
-		    <div id="cloud">Cloud Cover: <span></span>%</div>
 		    <div id="humidity">Humidity: <span></span>%</div>
-
 		</div>
-		
-
+    
 	</body>
 
 </html>
